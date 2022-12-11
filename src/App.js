@@ -46,8 +46,10 @@ import routes from "routes";
 import { useSoftUIController, setMiniSidenav, setOpenConfigurator } from "context";
 
 // Images
-import brand from "assets/images/logo-ct.png";
-import Example from "components/Example";
+import brand from "assets/svgs/Logo.svg";
+import Index from "views/Experiment/Index";
+import SingleGoal from "views/Goals/SingleGoal";
+import SingleGoalGraph from "views/Goals/SingleGoalGraph";
 
 export default function App() {
   const [controller, dispatch] = useSoftUIController();
@@ -144,13 +146,13 @@ export default function App() {
             <Sidenav
               color={sidenavColor}
               brand={brand}
-              brandName="App Name UI Dashboard"
+              brandName="Hyperstream"
               routes={routes}
               onMouseEnter={handleOnMouseEnter}
               onMouseLeave={handleOnMouseLeave}
             />
             <Configurator />
-            {configsButton}
+            {/* {configsButton} */}
           </>
         )}
         {layout === "vr" && <Configurator />}
@@ -164,25 +166,27 @@ export default function App() {
     </CacheProvider>
   ) : (
       <ThemeProvider theme={theme}>
-      <Example />
       <CssBaseline />
       {layout === "dashboard" && (
         <>
           <Sidenav
             color={sidenavColor}
             brand={brand}
-            brandName="App Name UI Dashboard"
+            brandName="Hyperstream"
             routes={routes}
             onMouseEnter={handleOnMouseEnter}
             onMouseLeave={handleOnMouseLeave}
           />
           <Configurator />
-          {configsButton}
+          {/* {configsButton} */}
         </>
       )}
       {layout === "vr" && <Configurator />}
       <Routes>
         {getRoutes(routes)}
+        <Route path="/new-experiment" element={<Index />} />
+        <Route path="/goals/:id" element={<SingleGoal />} />
+        <Route path="/goals/:id/graph" element={<SingleGoalGraph />} />
         <Route path="*" element={<Navigate to="/dashboard" />} />
       </Routes>
     </ThemeProvider>

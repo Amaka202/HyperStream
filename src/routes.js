@@ -8,9 +8,16 @@ import SignUp from "layouts/authentication/sign-up";
 // App Nmae UI Dashboard React icons
 import Shop from "examples/Icons/Shop";
 import Office from "examples/Icons/Office";
+import SettingsIcon from "examples/Icons/Settings";
 import Document from "examples/Icons/Document";
 import CreditCard from "examples/Icons/CreditCard";
 import Cube from "examples/Icons/Cube";
+import Goals from "views/Goals/Goals";
+import SingleGoal from "views/Goals/SingleGoal";
+import Index from "views/Experiment/Index";
+import SettingsPage from "views/Settings";
+import Calender from "views/Calender";
+import SingleGoalGraph from "views/Goals/SingleGoalGraph";
 
 const routes = [
   {
@@ -24,20 +31,29 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Settings",
-    key: "settings",
-    route: "/settings",
-    icon: <Shop size="12px" />,
-    component: <Settings />,
+    name: "Goals",
+    key: "goals",
+    route: "/goals",
+    icon: <Office size="12px" />,
+    component: <Goals />,
     noCollapse: true,
   },
   {
     type: "collapse",
-    name: "Calendar",
-    key: "calendar",
-    route: "/calendar",
-    icon: <Office size="12px" />,
-    component: <Calendar />,
+    name: "Calender",
+    key: "calander",
+    route: "/calander",
+    icon: <CreditCard size="12px" />,
+    component: <Calender />,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "Setting",
+    key: "setting",
+    route: "/setting",
+    icon: <SettingsIcon size="12px" />,
+    component: <Settings />,
     noCollapse: true,
   },
 ];
