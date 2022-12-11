@@ -1,14 +1,14 @@
 <!-- Designed for nanoGiants 12.2022 hackathon -->
-  <h1 align="center">App Name</h1>
+  <h1 align="center">HyperStream</h1>
 
 ## Application Description
 
-a web app for simplifying the growth hacking process, understanding, describing the goals, experiments, behaivors, expectations, and aid in the decision processes of companies and its users.
+a web tool for simplifying the growth hacking process, understanding, describing the goals, experiments, behaivors, expectations, and aid in the decision processes of  its users.
 
 ## Table of Contents
 
 <details>
-<summary>App Name</summary>
+<summary>HyperStream</summary>
 
 - [Application Description](#application-description)
 - [Table of Contents](#table-of-contents)
@@ -40,14 +40,14 @@ a web app for simplifying the growth hacking process, understanding, describing 
 
 ## Figma Wireframe
 
-[app name wireframes](https://www.figma.com/file/QdZmAGSeF6wA8zsy7Bi12S/Hackathon-design-file?node-id=0%3A1&t=KyRG2mk4TBS6zC1V-0)
+[HyperStream wireframes](https://www.figma.com/file/QdZmAGSeF6wA8zsy7Bi12S/Hackathon-design-file?node-id=0%3A1&t=KyRG2mk4TBS6zC1V-0)
 
 ## How to use the app
 
 **Step #1** - Clone the project
 
 ```bash
-$ git clone https://github.com/sandraamsc/app_name
+$ git clone https://github.com/sandraamsc/HyperStream
 ```
 
 **Step #2**
@@ -70,4 +70,4 @@ $ git clone https://github.com/sandraamsc/app_name
 
 ## License
 
-[![GitLicense](https://img.shields.io/badge/License-MIT-lime.svg)](https://github.com/sandraamsc/app_name/blob/main/LICENSE)
+[![GitLicense](https://img.shields.io/badge/License-MIT-lime.svg)](https://github.com/sandraamsc/HyperStream/blob/main/LICENSE)
