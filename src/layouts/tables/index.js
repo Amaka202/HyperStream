@@ -43,9 +43,7 @@ function Tables() {
           </Card>
         </SoftBox>
         <Card>
-          <SoftBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
-            <SoftTypography variant="h6">Projects table</SoftTypography>
-          </SoftBox>
+         
           <SoftBox
             sx={{
               "& .MuiTableRow-root:not(:last-child)": {
