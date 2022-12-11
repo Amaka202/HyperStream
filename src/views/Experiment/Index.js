@@ -52,7 +52,6 @@ function Index() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <Typography>New Experiment</Typography>
       <Grid container spacing={1}>
           <Grid item xs={3}>
             <CustomStepper activeStep={activeStep} setActiveStep={setActiveStep}/>
