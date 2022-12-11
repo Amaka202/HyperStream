@@ -8,11 +8,11 @@
 
 Coded by www.creative-tim.com
 
- =========================================================
+=========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
-
+import React from "react";
 import { useState, useEffect, useMemo } from "react";
 
 // react-router components
@@ -47,6 +47,7 @@ import { useSoftUIController, setMiniSidenav, setOpenConfigurator } from "contex
 
 // Images
 import brand from "assets/images/logo-ct.png";
+import Example from "components/Example";
 
 export default function App() {
   const [controller, dispatch] = useSoftUIController();
@@ -133,7 +134,9 @@ export default function App() {
   );
 
   return direction === "rtl" ? (
+    
     <CacheProvider value={rtlCache}>
+      
       <ThemeProvider theme={themeRTL}>
         <CssBaseline />
         {layout === "dashboard" && (
@@ -152,13 +155,16 @@ export default function App() {
         )}
         {layout === "vr" && <Configurator />}
         <Routes>
+
           {getRoutes(routes)}
           <Route path="*" element={<Navigate to="/dashboard" />} />
         </Routes>
+
       </ThemeProvider>
     </CacheProvider>
   ) : (
-    <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
+      <Example />
       <CssBaseline />
       {layout === "dashboard" && (
         <>
