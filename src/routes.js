@@ -1,8 +1,7 @@
 // App Name UI Dashboard React layouts
+import Settings from "layouts/settings";
+import Calendar from "layouts/calendar";
 import Dashboard from "layouts/dashboard";
-import Tables from "layouts/tables";
-import Billing from "layouts/billing";
-import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 
@@ -11,14 +10,12 @@ import Shop from "examples/Icons/Shop";
 import Office from "examples/Icons/Office";
 import SettingsIcon from "examples/Icons/Settings";
 import Document from "examples/Icons/Document";
-import SpaceShip from "examples/Icons/SpaceShip";
-import CustomerSupport from "examples/Icons/CustomerSupport";
 import CreditCard from "examples/Icons/CreditCard";
 import Cube from "examples/Icons/Cube";
 import Goals from "views/Goals/Goals";
 import SingleGoal from "views/Goals/SingleGoal";
 import Index from "views/Experiment/Index";
-import Settings from "views/Settings";
+import SettingsPage from "views/Settings";
 import Calender from "views/Calender";
 import SingleGoalGraph from "views/Goals/SingleGoalGraph";
 
@@ -28,7 +25,7 @@ const routes = [
     name: "Dashboard",
     key: "dashboard",
     route: "/dashboard",
-    icon: <Shop size="12px" />,
+    icon: <CreditCard size="12px" />,
     component: <Dashboard />,
     noCollapse: true,
   },
