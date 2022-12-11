@@ -52,6 +52,10 @@ import SpaceShip from "examples/Icons/SpaceShip";
 import CustomerSupport from "examples/Icons/CustomerSupport";
 import CreditCard from "examples/Icons/CreditCard";
 import Cube from "examples/Icons/Cube";
+import Goals from "views/Goals/Goals";
+import SingleGoal from "views/Goals/SingleGoal";
+import SingleGoalGraph from "views/Goals/SingleGoalGraph";
+import ExperimentIndex from "views/Experiment/Index";
 
 const routes = [
   {
@@ -65,20 +69,29 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Tables",
-    key: "tables",
-    route: "/tables",
+    name: "Goals",
+    key: "goals",
+    route: "/goals",
     icon: <Office size="12px" />,
-    component: <Tables />,
+    component: <Goals />,
     noCollapse: true,
   },
   {
     type: "collapse",
-    name: "Billing",
-    key: "billing",
-    route: "/billing",
+    name: "Goals",
+    key: "goals",
+    route: "/goals/:id",
+    icon: <Office size="12px" />,
+    component: <SingleGoalGraph />,
+    noCollapse: true,
+  },
+  {
+    type: "collapse",
+    name: "New Experiment",
+    key: "experiment",
+    route: "/create-experiment",
     icon: <CreditCard size="12px" />,
-    component: <Billing />,
+    component: <ExperimentIndex />,
     noCollapse: true,
   },
   { type: "title", title: "Account Pages", key: "account-pages" },
