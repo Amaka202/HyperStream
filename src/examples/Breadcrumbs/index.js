@@ -33,7 +33,7 @@ function Breadcrumbs({ icon, title, route, light }) {
             opacity={light ? 0.8 : 0.5}
             sx={{ lineHeight: 0 }}
           >
-            <Icon>{icon}</Icon>
+            Home
           </SoftTypography>
         </Link>
         {routes.map((el) => (
@@ -64,7 +64,7 @@ function Breadcrumbs({ icon, title, route, light }) {
       <SoftTypography
         fontWeight="bold"
         textTransform="capitalize"
-        variant="h6"
+        variant="h3"
         color={light ? "white" : "dark"}
         noWrap
       >

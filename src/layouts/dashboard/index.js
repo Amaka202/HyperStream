@@ -28,9 +28,6 @@ import { ReactComponent as SeeMore } from "assets/svgs/seemore.svg";
 import { ReactComponent as PlayBtn } from "assets/svgs/play.svg";
 import { ReactComponent as PauseBtn } from "assets/svgs/pause.svg";
 
-
-import homeDecor2 from "assets/images/home-decor-2.jpg";
-import homeDecor3 from "assets/images/home-decor-3.jpg";
 import team1 from "assets/images/team-1.jpg";
 import team2 from "assets/images/team-2.jpg";
 import team3 from "assets/images/team-3.jpg";
@@ -41,26 +38,30 @@ import AddIcon from '@mui/icons-material/Add';
 import { styled } from "@mui/system";
 import Collapse from '@mui/material/Collapse';
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Overview() {
+  const navigate = useNavigate();
+
   const [openGoals, setOpenGoals] = useState({
     acquisition: false,
     referral: false,
-    awareness: false,
+    awareness: true,
     revenue: false,
     activation: false,
     retention: false,
-    
   })
 
-  console.log('amaka', openGoals)
+  const navigateToSIngleGoal = () => {
+    navigate(`/goals/29302920390/graph`);
+  }
 
   return (
     <DashboardLayout>
       <DashboardNavbar />
       <Stack spacing={3} mt={4}>
-        <Grid container spacing={5}>
-          <Grid item xs={4}>
+        <Grid container spacing={5} >
+          <Grid item xs={4} >
             <Stack direction='row' justifyContent='space-between'>
               <Stack direction='row' spacing={1}>
                 <Typography>Scheduled</Typography>
@@ -91,11 +92,11 @@ function Overview() {
         </Grid>
         <Grid container spacing={2}>
           <Grid item xs={4}>
-            <StyledCard>
+            <StyledCard onClick={navigateToSIngleGoal}>
               <Box style={{padding: '0 1rem 0.5rem 1rem'}}>
                 <StyledGoal sx={{backgroundColor: '#FCDFE2', width: '50%', marginBottom: '1rem'}} variant='body2'>Awareness</StyledGoal>
                 <Stack direction='row' justifyContent='space-between'>
-                  <Typography alignSelf='center'>Host an event</Typography>
+                  <Typography alignSelf='center'>Run an Instagram Add</Typography>
                   {openGoals.awareness ? 
                   <IconButton onClick={() => setOpenGoals({awareness: false})}>
                     <SeeMore /> 
@@ -106,7 +107,7 @@ function Overview() {
                   </IconButton> }
                 </Stack>
                 <Collapse in={openGoals.awareness} timeout="auto" unmountOnExit>
-                    <Typography variant='body2'>Increase purchases via website for 45%</Typography>
+                    <Typography variant='body2'>Increase user sign ups by 12,000</Typography>
                     <Typography variant='subtitle2'>Start date: 25/12/2022</Typography>
                     <AvatarGroup total={10}>
                       <Avatar alt="Remy Sharp" src={team1} />
@@ -324,9 +325,10 @@ const StyledGoal = styled(Typography)({
  });
 
  const StyledCard = styled(Box)({
-  background: '#F0F0FB',
+  background: '#fff',
   borderRadius: '45px',
-  paddingTop: '1rem'
+  paddingTop: '1rem',
+  cursor: 'pointer'
  });
 
  const StyledBottom = styled(Box)({
