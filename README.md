@@ -3,7 +3,7 @@
 
 ## Application Description
 
-Current State: This web application is currently being created for simplifying the growth hacking process, understanding, describing the goals, experiments, behaivors, expectations, and aid in the decision process of the owner!
+a web app for simplifying the growth hacking process, understanding, describing the goals, experiments, behaivors, expectations, and aid in the decision processes of companies and its users.
 
 ## Table of Contents
 
@@ -36,7 +36,7 @@ Current State: This web application is currently being created for simplifying t
 ## Features
 
 - RUN EXPERIMENT - After succesfully creating a goal, setting the proper information for the experiment to run, like the experiment type, the experiment objectives, and measurements the RUN EXPERIMENT feature is going to run the experiment, and track its behaivor, helping you with, increasing budget, pausing experiments, or definitely closing them according to the expectations.
-- TBD - 
+
 
 ## Figma Wireframe
 
