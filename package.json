@@ -25,6 +25,7 @@
     "react-countup": "6.3.0",
     "react-dom": "18.2.0",
     "react-flatpickr": "3.10.13",
+    "react-hook-form": "^7.40.0",
     "react-router-dom": "6.3.0",
     "react-scripts": "5.0.1",
     "stylis": "4.1.1",
@@ -59,6 +60,7 @@
     ]
   },
   "devDependencies": {
+    "eslint": "8.18.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-prettier": "4.2.1",

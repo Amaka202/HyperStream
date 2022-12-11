@@ -11,6 +11,7 @@ import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
+import { Link as RouterLink } from "react-router-dom";
 
 // Soft UI Dashboard React components
 import SoftBox from "components/SoftBox";
@@ -145,15 +146,13 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
         
         <SoftBox mt={2}>
           <SoftButton
-            component="a"
-            href="https://creative-tim.com/product/soft-ui-dashboard-pro-react"
-            target="_blank"
-            rel="noreferrer"
-            variant="gradient"
+            component={RouterLink}
+            to='/new-experiment'
+            variant="contained"
             color={color}
             fullWidth
           >
-            upgrade to pro
+            NEW EXPERIMENT
           </SoftButton>
         </SoftBox>
       </SoftBox>

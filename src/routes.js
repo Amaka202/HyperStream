@@ -9,12 +9,18 @@ import SignUp from "layouts/authentication/sign-up";
 // App Nmae UI Dashboard React icons
 import Shop from "examples/Icons/Shop";
 import Office from "examples/Icons/Office";
-import Settings from "examples/Icons/Settings";
+import SettingsIcon from "examples/Icons/Settings";
 import Document from "examples/Icons/Document";
 import SpaceShip from "examples/Icons/SpaceShip";
 import CustomerSupport from "examples/Icons/CustomerSupport";
 import CreditCard from "examples/Icons/CreditCard";
 import Cube from "examples/Icons/Cube";
+import Goals from "views/Goals/Goals";
+import SingleGoal from "views/Goals/SingleGoal";
+import Index from "views/Experiment/Index";
+import Settings from "views/Settings";
+import Calender from "views/Calender";
+import SingleGoalGraph from "views/Goals/SingleGoalGraph";
 
 const routes = [
   {
@@ -28,29 +34,29 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Tables",
-    key: "tables",
-    route: "/tables",
+    name: "Goals",
+    key: "goals",
+    route: "/goals",
     icon: <Office size="12px" />,
-    component: <Tables />,
+    component: <Goals />,
     noCollapse: true,
   },
   {
     type: "collapse",
-    name: "Billing",
-    key: "billing",
-    route: "/billing",
+    name: "Calender",
+    key: "calander",
+    route: "/calander",
     icon: <CreditCard size="12px" />,
-    component: <Billing />,
+    component: <Calender />,
     noCollapse: true,
   },
   {
     type: "collapse",
-    name: "Profile",
-    key: "profile",
-    route: "/profile",
-    icon: <CustomerSupport size="12px" />,
-    component: <Profile />,
+    name: "Setting",
+    key: "setting",
+    route: "/setting",
+    icon: <SettingsIcon size="12px" />,
+    component: <Settings />,
     noCollapse: true,
   },
 ];
