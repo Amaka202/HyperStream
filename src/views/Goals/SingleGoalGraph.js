@@ -25,16 +25,11 @@ import Icon from "@mui/material/Icon";
 // Soft UI Dashboard React examples
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import Footer from "examples/Footer";
-import Table from "examples/Tables/Table";
 
 // Data
-import authorsTableData from "layouts/tables/data/authorsTableData";
-import projectsTableData from "layouts/tables/data/projectsTableData";
 import { styled } from "@mui/system";
-import { Box, Button, Divider, Grid, Stack, Typography } from "@mui/material";
+import { Box,  Grid, Stack, Typography } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
-import SoftButton from "components/SoftButton";
 import GradientLineChart from "examples/Charts/LineCharts/GradientLineChart";
 import gradientLineChartData from "layouts/dashboard/data/gradientLineChartData";
 
@@ -42,9 +37,6 @@ function SingleGoalGraph() {
   const navigate = useNavigate();
   const { size } = typography;
 
-  const navigateToSIngleGoal = (id) => {
-    navigate(`/goals/${id}`);
-  }
 
   return (
     <DashboardLayout>
