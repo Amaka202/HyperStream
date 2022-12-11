@@ -47,33 +47,23 @@ a web app that does abc
 **Step #1** - Clone the project
 
 ```bash
-$ git clone https://github.com/link.....
+$ git clone https://github.com/sandraamsc/app_name
 ```
 
 **Step #2**
 
-```
-cd client
-```
-
 - Install dependencies: `npm i` OR `yarn`
 
 - To start the webapp, run: `npm start` OR `yarn start`
-
-```
-cd backend
-```
-
-- Install dependencies: `npm i` OR `yarn`
-
-- To start the webapp, run: `npm start` OR `yarn start`
-
 
 
 ## Authors
 
 | Name            | Link                                   |
 | --------------- | -------------------------------------- |
+| Federico Gonzalez | https://linkedin.com/in/FedericoGonDa |
+| Anastasiia Miakshylo | social |
+| name | social |
 | name | social |
 | name | social |
 | name | social |

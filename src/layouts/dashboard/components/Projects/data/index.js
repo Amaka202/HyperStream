@@ -8,9 +8,6 @@ import SoftAvatar from "components/SoftAvatar";
 import SoftProgress from "components/SoftProgress";
 
 // Images
-import logoXD from "assets/images/small-logos/logo-xd.svg";
-import logoAtlassian from "assets/images/small-logos/logo-atlassian.svg";
-import logoSlack from "assets/images/small-logos/logo-slack.svg";
 import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
 import logoJira from "assets/images/small-logos/logo-jira.svg";
 import logoInvesion from "assets/images/small-logos/logo-invision.svg";
@@ -54,71 +51,6 @@ export default function data() {
     ],
 
     rows: [
-      {
-        companies: [logoXD, "Soft UI XD Version"],
-        members: (
-          <SoftBox display="flex" py={1}>
-            {avatars([
-              [team1, "Ryan Tompson"],
-              [team2, "Romina Hadid"],
-              [team3, "Alexander Smith"],
-              [team4, "Jessica Doe"],
-            ])}
-          </SoftBox>
-        ),
-        budget: (
-          <SoftTypography variant="caption" color="text" fontWeight="medium">
-            $14,000
-          </SoftTypography>
-        ),
-        completion: (
-          <SoftBox width="8rem" textAlign="left">
-            <SoftProgress value={60} color="info" variant="gradient" label={false} />
-          </SoftBox>
-        ),
-      },
-      {
-        companies: [logoAtlassian, "Add Progress Track"],
-        members: (
-          <SoftBox display="flex" py={1}>
-            {avatars([
-              [team2, "Romina Hadid"],
-              [team4, "Jessica Doe"],
-            ])}
-          </SoftBox>
-        ),
-        budget: (
-          <SoftTypography variant="caption" color="text" fontWeight="medium">
-            $3,000
-          </SoftTypography>
-        ),
-        completion: (
-          <SoftBox width="8rem" textAlign="left">
-            <SoftProgress value={10} color="info" variant="gradient" label={false} />
-          </SoftBox>
-        ),
-      },
-      {
-        companies: [logoSlack, "Fix Platform Errors"],
-        members: (
-          <SoftBox display="flex" py={1}>
-            {avatars([
-              [team1, "Ryan Tompson"],
-              [team3, "Alexander Smith"],
-            ])}
-          </SoftBox>
-        ),
-        budget: (
-          <SoftTypography variant="caption" color="text" fontWeight="medium">
-            Not set
-          </SoftTypography>
-        ),
-        completion: (
-          <SoftBox width="8rem" textAlign="left">
-            <SoftProgress value={100} color="success" variant="gradient" label={false} />
-          </SoftBox>
-        ),
-      },
       {
         companies: [logoSpotify, "Launch our Mobile App"],
         members: (
