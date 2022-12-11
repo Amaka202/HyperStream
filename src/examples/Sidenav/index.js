@@ -151,6 +151,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
             variant="contained"
             color={color}
             fullWidth
+            sx={{borderRadius: '30px'}}
           >
             NEW EXPERIMENT
           </SoftButton>
