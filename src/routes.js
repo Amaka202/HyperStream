@@ -53,7 +53,7 @@ const routes = [
     key: "setting",
     route: "/setting",
     icon: <SettingsIcon size="12px" />,
-    component: <Settings />,
+    component: <SettingsPage />,
     noCollapse: true,
   },
 ];
