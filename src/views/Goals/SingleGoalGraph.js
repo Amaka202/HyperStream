@@ -79,7 +79,7 @@ function SingleGoalGraph() {
                     </Grid>
             </Card>
             <GradientLineChart
-            title="Sales Overview"
+            title="Analytics Overview"
             description={
                 <SoftBox display="flex" alignItems="center">
                 <SoftBox fontSize={size.lg} color="success" mb={0.3} mr={0.5} lineHeight={0}>
