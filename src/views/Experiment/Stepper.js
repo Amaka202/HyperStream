@@ -23,9 +23,9 @@ const steps = [
   {
     label: 'Feasibility',
   },
-  {
-    label: 'Summary',
-  },
+  // {
+  //   label: 'Summary',
+  // },
   {
     label: 'Participants',
   },

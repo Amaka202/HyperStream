@@ -67,8 +67,8 @@ function Index() {
                 <MeasurementForm control={control}/> :
                 activeStep === 3 ?
                 <Feasibility control={control}/> :
-                activeStep === 4 ?
-                <MeasurementForm control={control}/> :
+                // activeStep === 4 ?
+                // <MeasurementForm control={control}/> :
                 <AddParticipant control={control} setValue={setValue} register={register}/>
             }
             <Stack sx={{ mt: 9}} direction='row' justifyContent='space-between'>
@@ -86,13 +86,13 @@ function Index() {
                   <Button
                   variant="contained"
                   endIcon={<ArrowForwardIosIcon />}
-                  onClick={activeStep < 5 ? handleNext : handleSubmit(onSubmit)}
+                  onClick={activeStep < 4 ? handleNext : handleSubmit(onSubmit)}
                   sx={{ mt: 1, mr: 1, color: '#fff', borderRadius: '20px' }}
                   >
                     {
                       loading ? 
                       <CircularProgress color="secondary" size='small'/>:
-                        activeStep === 5 ? 'Finish' : 'Continue'
+                        activeStep === 4 ? 'Create an experiment' : 'Continue'
                     }
                   </Button>
             </Stack>
