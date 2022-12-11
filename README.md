@@ -40,7 +40,7 @@ a web app that does abc
 
 ## Figma Wireframe
 
-[app name wireframes](link)
+[app name wireframes](https://www.figma.com/file/QdZmAGSeF6wA8zsy7Bi12S/Hackathon-design-file?node-id=0%3A1&t=KyRG2mk4TBS6zC1V-0)
 
 ## How to use the app
 
@@ -61,13 +61,12 @@ $ git clone https://github.com/sandraamsc/app_name
 
 | Name            | Link                                   |
 | --------------- | -------------------------------------- |
-| Federico Gonzalez | https://linkedin.com/in/FedericoGonDa |
-| Anastasiia Miakshylo | social |
-| name | social |
-| name | social |
-| name | social |
-| name | social |
-| name | social |
+| Federico Gonzalez | https://linkedin.com/in/FedericoGonDa/ |
+| Anastasiia Miakshylo | https://www.linkedin.com/in/amiakshylo/ |
+| Chiamaka Umeh | https://www.linkedin.com/in/chiamakaumeh/ |
+| Sandra Ashipala | https://www.linkedin.com/in/sandraashipala/ |
+| Kitik Maryna | https://www.linkedin.com/in/kitikma/ |
+| Alex Murrison |  https://www.linkedin.com/in/alex-murrison-aa4609148 |
 
 ## License
 
