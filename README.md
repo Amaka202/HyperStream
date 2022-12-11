@@ -81,4 +81,4 @@ cd backend
 
 ## License
 
-[![GitLicense](https://img.shields.io/badge/License-Apache-lime.svg)](https://github.com/sandramsc/minimalistic-storefront/blob/main/LICENSE)
+[![GitLicense](https://img.shields.io/badge/License-MIT-lime.svg)](https://github.com/sandraamsc/app_name/blob/main/LICENSE)
